@@ -1,0 +1,20 @@
+{
+  "name": "06_Objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -x \"clear;node MapAndSet.js\"",
+    "test": "jest",
+    "test_all": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "jest": "^25.4.0"
+  }
+}

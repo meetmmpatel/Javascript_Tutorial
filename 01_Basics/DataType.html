@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatypes in javaScript</title>
+    <style>
+      * {
+        font-size: 25px;
+      }
+      button {
+        background-color: greenyellow;
+        margin: 10px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Data Tyeps in javaScript</h1>
+    <ul>
+      <li>
+        Primitive Typs
+        <ol>
+          <li>String : "any text with or number within qoutes"</li>
+          <li>Boolean: true/false</li>
+          <li>Number: any number including decimle value</li>
+          <li>Undefined: not defined</li>
+          <li>Null: no value</li>
+        </ol>
+      </li>
+      <script>
+        let name = "this is how you write the String";
+        let bool = "Boolean can be only true or false";
+        let num = 19.999;
+        let undif = undefined;
+        let canBeNull = null;
+        function printTheValue() {
+          document.writeln(
+            name +
+              "<br>" +
+              bool +
+              "<br>" +
+              num +
+              "<br>" +
+              undif +
+              "<br>" +
+              canBeNull +
+              "<br>"
+          );
+        }
+      </script>
+      <button type="button" onclick="printTheValue()">
+        Click for Primitive data type information
+      </button>
+
+      <br />
+      <li>
+        non-Primitive/Reference Type
+        <ol>
+          <li>Object:</li>
+          <li>Array:</li>
+          <li>RegExp:</li>
+        </ol>
+        <script>
+          let obj = {
+            id: 101,
+            name: "Mark Miller",
+            date: "04/04/2020",
+          };
+          let numbers = [11, 12, 13, 14.99, 15, 16];
+
+          function printNonPrimitiveData() {
+            document.writeln(obj.id + obj.name + obj.date + "<br>" + numbers);
+          }
+        </script>
+        <button type="button" ondblclick="printNonPrimitiveData()">
+          Click for Non-primitive data tyeps
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>

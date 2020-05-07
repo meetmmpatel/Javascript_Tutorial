@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable In javaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript Variable Types</h1>
+    <ol>
+      <li>var</li>
+      <p>Var was used in older version of javascript</p>
+      <p>Var has global scope</p>
+      <li>
+        let
+        <p>let is new keyword in ES6</p>
+        <p>scope of let is local</p>
+      </li>
+      <li>const</li>
+      <p>the value will not change once it's assgin</p>
+    </ol>
+    <script>
+      var numOne = 55;
+      var numTwo = 35;
+      var total = numOne + numTwo;
+      document.writeln(total);
+
+      let numbersOne = 12.99;
+      let numbersTwo = 45.99;
+
+      numbersTwo = numbersOne;
+
+      document.writeln("Value of Number One" + numbersOne);
+      document.writeln("Value of Number Two" + numbersTwo);
+
+      document.writeln(numbersOne + numbersTwo);
+
+      // 
+      const fixPrice = 10.99;
+      document.writeln("<br>" + fixPrice)
+    </script>
+  </body>
+</html>
